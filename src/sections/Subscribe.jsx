@@ -1,12 +1,16 @@
 import Button from "../components/Button";
 
-const Subscribe = () => {
+const Subscribe = ({ darkMode }) => {
   return (
     <section
       className="max-container flex justify-between items-center max-xl:flex-col gap-10"
       id="contact-us"
     >
-      <h3 className="text-4xl leading-[68px] lg:max-w-md font-palanquin font-bold">
+      <h3
+        className={`${
+          darkMode ? "text-white" : "text-black"
+        } text-4xl leading-[68px] lg:max-w-md font-palanquin font-bold`}
+      >
         Sign Up from <span className="text-coral-red">Updates</span> &
         Newsletter
       </h3>
@@ -14,7 +18,7 @@ const Subscribe = () => {
         <input
           type="text"
           placeholder="Subscribe @nike.com"
-          className="input"
+          className={`${darkMode && "bg-black"} input`}
         />
         <div className="flex max-sm:justify-end items-center max-sm:w-full">
           <Button label="Sign Up" fullWidth />

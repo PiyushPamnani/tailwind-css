@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontSize: {
@@ -20,6 +21,7 @@ export default {
       },
       colors: {
         primary: "#ECEEFF",
+        dark: "#BCBECC",
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
@@ -27,6 +29,7 @@ export default {
       },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
+        "3xl-dark": "0 8px 20px #002239",
       },
       backgroundImage: {
         hero: "url('assets/images/collection-background.svg')",

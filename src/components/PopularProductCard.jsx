@@ -1,6 +1,6 @@
 import { star } from "../assets/icons";
 
-const PopularProductCard = ({ imgURL, price, name, rating }) => {
+const PopularProductCard = ({ imgURL, price, name, rating, darkMode }) => {
   return (
     <div className="flex flex-1 flex-col w-full max-sm:w-full">
       <img src={imgURL} alt={name} className="w-[280px] h-[280px]" />
@@ -10,7 +10,11 @@ const PopularProductCard = ({ imgURL, price, name, rating }) => {
           ({rating})
         </p>
       </div>
-      <h3 className="mt-2 text-2xl leading-normal font-semibold font-palanquin">
+      <h3
+        className={`${
+          darkMode ? "text-white" : "text-black"
+        } mt-2 text-2xl leading-normal font-semibold font-palanquin`}
+      >
         {name}
       </h3>
       <p className="mt-2 font-semibold font-montserrat leading-normal text-coral-red">

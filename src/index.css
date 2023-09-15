@@ -12,10 +12,23 @@
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @layer components {
   .max-container {
     max-width: 1440px;
     margin: 0 auto;
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin: auto;
   }
 
   .input {

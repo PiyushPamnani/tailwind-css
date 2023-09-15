@@ -1,16 +1,20 @@
 import Button from "../components/Button";
 import { shoe8 } from "../assets/images";
 
-const SuperQuality = () => {
+const SuperQuality = ({ darkMode }) => {
   return (
     <section
       id="about-us"
       className="flex justify-between items-center max-lg:flex-col gap-1- w-full max-container"
     >
       <div className="flex flex-1 flex-col">
-        <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
-          We Provide You <span className="text-coral-red">Super</span>{" "}
-          <span className="text-coral-red">Quality</span> Shoes
+        <h2
+          className={`${
+            darkMode ? "text-white" : "text-black"
+          } font-palanquin text-4xl capitalize font-bold lg:max-w-lg`}
+        >
+          We Provide You <span className="text-coral-red">Super Quality</span>{" "}
+          Shoes
         </h2>
         <p className="mt-4 lg:max-w-lg info-text">
           Ensuring premium comfort and style, our meticulously crafted footwear
